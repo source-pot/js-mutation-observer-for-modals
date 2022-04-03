@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="/app.css" />
+        <title>Modal using MutationObserver</title>
+    </head>
+    <body>
+
+        <h1 class="heading--page-title">Modal using MutationObserver</h1>
+
+        <main>
+            <section>
+                <h2>The idea</h2>
+                <p>
+                    A modal appears in the html, but hidden.  When a user interacts with some
+                    element on the page, the model is shown.  The MutationObserver fires and sees
+                    the modal is now visible.  An Ajax request is fired to retrieve the modal's
+                    contents.
+                </p>
+                <p>
+                    <button class="button--show-modal" data-target="modal1">Show modal 1</button>
+                    <button class="button--show-modal" data-target="modal2">Show modal 2</button>
+                    <button class="button--show-modal" data-target="modal3">Show modal 3</button>
+                    <button class="button--show-modal" data-target="modal4">Show modal 4</button>
+                </p>
+            </section>
+        </main>
+        
+        <aside class="modal modal1 modal--hidden" data-url="/modal-content/modal1.html">
+            <div class="modal__background"></div>
+            <div class="modal__content">
+                <h6 class="modal__header">Demo modal</h6>
+                <div class="modal__body">
+                    <p>Loading...</p>
+                </div>
+                <div class="modal__footer">
+                    <p><button class="modal__button--close">Close</button></p>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="modal modal2 modal--hidden" data-url="/modal-content/modal2.html">
+            <div class="modal__background"></div>
+            <div class="modal__content">
+                <h6 class="modal__header">Demo modal</h6>
+                <div class="modal__body">
+                    <p>Loading...</p>
+                </div>
+                <div class="modal__footer">
+                    <p><button class="modal__button--close">Close</button></p>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="modal modal3 modal--hidden" data-url="/modal-content/modal3.html">
+            <div class="modal__background"></div>
+            <div class="modal__content">
+                <h6 class="modal__header">Demo modal</h6>
+                <div class="modal__body">
+                    <p>Loading...</p>
+                </div>
+                <div class="modal__footer">
+                    <p><button class="modal__button--close">Close</button></p>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="modal modal4 modal--hidden" data-url="/modal-content/modal4.html">
+            <div class="modal__background"></div>
+            <div class="modal__content">
+                <h6 class="modal__header">Demo modal</h6>
+                <div class="modal__body">
+                    <p>Loading...</p>
+                </div>
+                <div class="modal__footer">
+                    <p><button class="modal__button--close">Close</button></p>
+                </div>
+            </div>
+        </aside>
+
+        <script type="module" src="/app.js"></script>
+    </body>
+</html>
