@@ -4,7 +4,7 @@ A demo of using the Javascript MutationObserver to load content automatically wh
 
 ## Credit
 
-This idea was given to me by my friend (David)[https://github.com/DrHayes82] so I can take no credit for it.
+This idea was given to me by my friend [David](https://github.com/DrHayes82) so I can take no credit for it.
 
 ## Example
 
